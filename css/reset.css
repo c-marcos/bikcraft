@@ -1,0 +1,93 @@
+/* Reset geral */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia básica */
+body {
+  font-family: "Poppins", sans-serif; /* ou qualquer fonte que você esteja usando */
+  line-height: 1.5;
+  font-size: 100%; /* Define o tamanho de fonte base */
+  color: inherit; /* Garante que a cor do texto seja herdada corretamente */
+  background-color: transparent;
+}
+
+/* Remover estilos de links */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; /* Herda a cor do texto */
+}
+
+/* Remover estilo de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remover bordas de imagens */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Remover campos de formulário padrão */
+input,
+textarea,
+select,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Botões */
+button {
+  cursor: pointer;
+}
+
+/* Remover estilos padrão de blocos */
+blockquote {
+  margin: 0;
+  padding: 0;
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after {
+  content: "";
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Evitar sobrecarga de espaços por padrão */
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  display: none;
+}
+
+summary {
+  list-style: none;
+}
