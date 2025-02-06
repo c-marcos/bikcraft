@@ -107,3 +107,15 @@
     font-size: 1rem;
   }
 }
+
+@media (width <= 375px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid > p:last-child {
+    grid-column: 1/2;
+  }
+  .footer-informacao {
+    margin-top: 24px;
+  }
+}
