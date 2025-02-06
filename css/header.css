@@ -45,7 +45,7 @@
 }
 
 @media (width <= 1200px) {
-  .header-container {
+  .container {
     padding: 0 40px;
   }
 }
@@ -73,7 +73,7 @@
   .menu-item:hover {
     background-color: var(--color-c10);
   }
-  .header-container {
+  .container {
     padding: 0 24px;
   }
 }
@@ -86,10 +86,15 @@
   }
 }
 @media (width <= 500px) {
+  .header {
+    padding: 24px 0;
+  }
+  .container {
+    padding: 0 12px;
+  }
   .header-container {
     flex-direction: column;
     height: auto;
-    padding: 24px 12px;
     gap: 24px;
   }
   .header-menu {
