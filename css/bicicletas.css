@@ -1,0 +1,12 @@
+.main-bicicletas {
+  background-color: var(--color-w);
+  padding: 240px 0 200px 0;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.bicicletas-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

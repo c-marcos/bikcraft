@@ -6,6 +6,21 @@
   margin: 0 auto;
   width: 100%;
 }
+.btn-defalt {
+  color: var(--Primary-p5);
+  background: var(--gradient-primary);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font: 600 1.125rem / 1.35 "Poppins", sans-serif;
+}
+.btn-defalt:hover {
+  background: var(--gradient-primary-hover);
+}
+.p-decor {
+  color: var(--Primary-p1);
+}
 
 /* Fontes com classes para Poppins e Roboto */
 
@@ -14,49 +29,49 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 4rem; /* 64px / 16 = 4rem */
-  line-height: 4.5rem; /* 72px / 16 = 4.5rem */
+  line-height: 1.125; /* 72px / 64px = 1.125 */
 }
 
 .font-P-1-xl {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2rem; /* 32px / 16 = 2rem */
-  line-height: 2.5rem; /* 40px / 16 = 2.5rem */
+  line-height: 1.25; /* 40px / 32px = 1.25 */
 }
 
 .font-P-1-l {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.5rem; /* 24px / 16 = 1.5rem */
-  line-height: 2.25rem; /* 36px / 16 = 2.25rem */
+  line-height: 1.5; /* 36px / 24px = 1.5 */
 }
 
 .font-P-1-m {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.125rem; /* 18px / 16 = 1.125rem */
-  line-height: 1.5rem; /* 24px / 16 = 1.5rem */
+  line-height: 1.33; /* 24px / 18px = 1.33 */
 }
 
 .font-P-1-m-b {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.125rem; /* 18px / 16 = 1.125rem */
-  line-height: 1.5rem; /* 24px / 16 = 1.5rem */
+  line-height: 1.33; /* 24px / 18px = 1.33 */
 }
 
 .font-P-1-s {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1rem; /* 16px / 16 = 1rem */
-  line-height: 1.5rem; /* 24px / 16 = 1.5rem */
+  line-height: 1.5; /* 24px / 16px = 1.5 */
 }
 
 .font-P-1-xs {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 0.75rem; /* 12px / 16 = 0.75rem */
-  line-height: 1rem; /* 16px / 16 = 1rem */
+  line-height: 1.33; /* 16px / 12px = 1.33 */
 }
 
 /* Roboto */
@@ -64,14 +79,14 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.5rem; /* 24px / 16 = 1.5rem */
-  line-height: 2.25rem; /* 36px / 16 = 2.25rem */
+  line-height: 1.5; /* 36px / 24px = 1.5 */
 }
 
 .font-R-2-l-b {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.5rem; /* 24px / 16 = 1.5rem */
-  line-height: 2.25rem; /* 36px / 16 = 2.25rem */
+  line-height: 1.5; /* 36px / 24px = 1.5 */
   text-transform: uppercase;
   letter-spacing: 1.5%;
 }
@@ -80,19 +95,19 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.125rem; /* 18px / 16 = 1.125rem */
-  line-height: 1.5rem; /* 24px / 16 = 1.5rem */
+  line-height: 1.33; /* 24px / 18px = 1.33 */
 }
 
 .font-R-2-s {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem; /* 16px / 16 = 1rem */
-  line-height: 1.5rem; /* 24px / 16 = 1.5rem */
+  line-height: 1.5; /* 24px / 16px = 1.5 */
 }
 
 .font-R-2-xs {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.875rem; /* 14px / 16 = 0.875rem */
-  line-height: 1.25rem; /* 20px / 16 = 1.25rem */
+  line-height: 1.43; /* 20px / 14px = 1.43 */
 }

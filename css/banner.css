@@ -1,0 +1,94 @@
+.main-banner {
+  position: relative;
+  background-color: var(--color-c12);
+  color: var(--color-w);
+  box-shadow: inset 0 -120px #ffffff;
+}
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+}
+.banner-info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+  gap: 32px;
+}
+.banner-title span {
+  color: var(--Primary-p1);
+}
+.banner-description {
+  color: var(--color-c5);
+}
+.banner-info a {
+  align-self: flex-start;
+}
+.banner-bike {
+  height: 100%;
+}
+.banner-bike img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 4px;
+}
+.banner-bike img:last-child {
+  display: none;
+}
+
+@media (width < 1200px) {
+  .banner-grid {
+    gap: 40px;
+  }
+  .banner-title {
+    font-size: 48px;
+  }
+}
+@media (width <= 900px) {
+  .main-banner {
+    background-color: var(--color-c11);
+    box-shadow: inset 0 -80px #ffffff;
+    padding-top: 2rem;
+  }
+  .banner-grid {
+    grid-template-columns: 1fr;
+  }
+  .banner-info {
+    padding-bottom: 0;
+  }
+  .banner-bike {
+    max-height: 500px;
+    width: 100%;
+  }
+  .banner-bike img:first-child {
+    display: none;
+  }
+  .banner-bike img:last-child {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+@media (width <= 800px) {
+  .banner-grid {
+    gap: 32px;
+  }
+  .banner-info {
+    gap: 20px;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-description {
+    font-size: 18px;
+  }
+  .banner-info a {
+    font-size: 16px;
+  }
+}
+@media (width <= 500px) {
+  .banner-info a {
+    padding: 12px 16px;
+  }
+}
