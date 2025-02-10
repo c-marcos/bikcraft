@@ -111,3 +111,26 @@
   font-size: 0.875rem; /* 14px / 16 = 0.875rem */
   line-height: 1.43; /* 20px / 14px = 1.43 */
 }
+
+/* Define a largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* Para a barra vertical */
+  height: 12px; /* Para a barra horizontal */
+}
+
+/* Define a cor da parte "corpo" da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor do fundo da barra de rolagem */
+  border-radius: 10px;
+}
+
+/* Define a cor e a forma do "thumb" (parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background: var(--color-c7); /* Cor do thumb */
+  border-radius: 10px;
+}
+
+/* Quando o thumb estiver sendo arrastado */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-c9); /* Cor quando o mouse passa por cima */
+}

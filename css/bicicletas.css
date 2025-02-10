@@ -1,12 +1,60 @@
 .main-bicicletas {
   background-color: var(--color-w);
-  padding: 240px 0 200px 0;
-}
-.main-container {
+  padding-bottom: 120px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 .bicicletas-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  max-width: 1460px;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+.bicicletas-cards li {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  gap: 8px;
+}
+.card-title {
+  color: var(--color-c11);
+  margin-top: 16px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-title::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--Primary-p1);
+  transition: 0.3s;
+}
+.bicicletas-cards a:hover h3::before {
+  width: 24px;
+}
+.card-prece {
+  margin-left: 24px;
+  color: var(--color-c8);
+}
+
+@media (width <= 1460px) {
+  .main-bicicletas {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (width <= 1050px) {
+  .main-bicicletas {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bicicletas-cards {
+    padding-left: 20px;
+    padding-bottom: 16px;
+  }
 }
