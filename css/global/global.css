@@ -134,3 +134,18 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-c9); /* Cor quando o mouse passa por cima */
 }
+
+@media (max-width: 600px) {
+  .font-P-1-xxl {
+    font-size: 3rem;
+    line-height: 1.125; /* 72px / 64px = 1.125 */
+  }
+}
+
+@media (max-width: 400px) {
+  .font-P-1-xxl {
+    font-size: 2rem;
+    line-height: 1.125;
+    text-align: center;
+  }
+}
