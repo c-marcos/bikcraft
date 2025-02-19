@@ -1,3 +1,7 @@
 @import url("/css/global/global.css");
 @import url("/css/global/header.css");
 @import url("/css/global/footer.css");
+@import url("/css/seguros.css");
+@import url("./css/plano.css");
+@import url("./css/vantagens.css");
+@import url("./css/perguntas.css");

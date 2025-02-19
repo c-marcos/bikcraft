@@ -1,0 +1,98 @@
+.perguntas {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.perguntas-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.perguntas-item:hover {
+  border: 1px solid var(--color-c3);
+}
+.perguntas-item:nth-child(2n + 1) {
+  background-color: var(--color-c1);
+}
+.perguntas-item dt {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+}
+.perguntas-item dt::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--Primary-p1);
+  position: absolute;
+  left: -20px;
+}
+.perguntas-item dt::after {
+  content: "";
+  width: 14px;
+  height: 6px;
+  background-image: url("/img/icones/seta-fechar.svg");
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+}
+.perguntas-item.abrir dt::after {
+  transform: rotate(-180deg);
+}
+dd {
+  color: var(--color-c9);
+  display: none;
+}
+
+.item-show {
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .perguntas {
+    padding: 120px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .perguntas {
+    padding: 60px 10px;
+    gap: 60px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 700px) {
+  .perguntas-item dt::after {
+    right: -20px;
+  }
+}
+@media (max-width: 600px) {
+  .perguntas {
+    padding: 30px 10px;
+    gap: 30px;
+  }
+  .perguntas-item dt::before {
+    top: -10px;
+    left: 0;
+  }
+  .perguntas-item dt::after {
+    right: -10px;
+    top: -10px;
+  }
+  h2 {
+    font-size: 40px !important;
+  }
+  .perguntas-item {
+    padding: 20px;
+  }
+}

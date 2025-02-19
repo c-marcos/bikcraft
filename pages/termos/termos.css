@@ -1,0 +1,51 @@
+@import url("/css/global/global.css");
+@import url("/css/global/header.css");
+@import url("/css/global/footer.css");
+
+.termo-banner {
+  padding: 60px;
+  background-color: var(--color-c11);
+  color: var(--color-w);
+}
+
+.termo-banner h4 {
+  color: var(--color-c5);
+}
+.condicao {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 120px 0;
+}
+.condicao li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 75ch;
+}
+
+.condicao h3 {
+  font-weight: 600;
+}
+
+.condicao p {
+  color: var(--color-c10);
+}
+
+@media (max-width: 1200px) {
+  .condicao {
+    padding: 120px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .condicao {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 600px) {
+  .condicao {
+    padding: 30px 0;
+    gap: 10px;
+  }
+}

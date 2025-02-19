@@ -43,7 +43,7 @@
 .cards-ouro > div {
   display: flex;
   gap: 1rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -51,9 +51,80 @@
 .card-prata h3 {
   color: var(--color-c6);
 }
-.card-prata p {
-  color: var(--color-c8);
+.card-prata a {
+  padding: 16px 32px;
+  background-color: var(--color-c10);
+  color: var(--color-c4);
+  align-self: flex-start;
+  border-radius: 4px;
+}
+.card-prata a:hover {
+  background-color: var(--color-c9);
 }
 .cards-ouro h3 {
   color: var(--Primary-p1);
+}
+.ouro {
+  align-self: self-start;
+}
+.seguros-cards span {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.seguros-cards span::after {
+  content: "mensal";
+  font-size: 1rem;
+  color: var(--color-c6);
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .main-seguros {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main-seguros {
+    padding: 40px 20px;
+  }
+  .seguros-container {
+    padding: 0;
+  }
+  .seguros-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .cards-ouro {
+    order: -1;
+  }
+}
+@media (max-width: 500px) {
+  .seguros-cards div {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .seguros-cards span::after {
+    font-size: 12px;
+  }
+  .seguros-cards p {
+    font-size: 1.125rem;
+  }
+  .card-prata,
+  .cards-ouro {
+    gap: 1rem;
+  }
+  .seguros-cards a {
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cards-ouro,
+  .card-prata {
+    padding-left: 34px;
+    padding-right: 14px;
+  }
 }

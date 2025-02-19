@@ -1,0 +1,23 @@
+.seguros-container h4 {
+  text-transform: uppercase;
+  color: var(--color-c5);
+  font-size: 1.5rem !important;
+}
+
+@media (min-width: 768px) {
+  .seguros-container h4 {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 600px) {
+  .seguros-container h4 {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .seguros-container h4 {
+    font-size: 0.875rem !important;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
