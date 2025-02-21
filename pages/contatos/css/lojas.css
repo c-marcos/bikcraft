@@ -16,6 +16,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
+.locais-card {
+  display: flex;
+  flex-direction: column;
+}
 .locais-card > div {
   padding: 32px 32px 32px 60px;
   display: flex;
@@ -23,10 +27,12 @@
   gap: 32px;
   background-color: var(--color-w);
   border-radius: 0 0 5px 5px;
+  height: 100%;
 }
 .locais-card > div > div {
   display: flex;
   gap: 60px;
+  flex: 1;
 }
 
 .endereco {
@@ -63,4 +69,41 @@
   height: 20px;
   background-image: url("/img/icones/horario.svg");
   left: -28px;
+}
+@media (max-width: 768px) {
+  .contatos-lojas {
+    padding: 60px 0;
+  }
+  .locais {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contatos-lojas {
+    padding: 30px 0;
+  }
+  .container-lojas {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .locais-card > div > div {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .locais-card > div {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .locais-card h4 {
+    font-size: 1.5rem;
+  }
+  .locais-card > div {
+    padding: 20px;
+    padding-left: 60px;
+  }
 }
