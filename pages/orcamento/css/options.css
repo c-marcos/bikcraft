@@ -1,0 +1,149 @@
+.orcamento-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.orcamento-options {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px;
+  background-color: var(--color-c12);
+  color: var(--color-w);
+  border-radius: 8px 0 0 8px;
+}
+.decor-left {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+}
+/* ===============> Estilizando bikcraft ou seguro<===============*/
+.orcamento-seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.orcamento-options h4 {
+  position: relative;
+  color: var(--color-c5);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  grid-column: 1/3;
+}
+.orcamento-options h4::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: var(--Primary-p1);
+  position: absolute;
+  left: -12px;
+}
+
+.radio-darck {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 18px 16px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color-c10);
+  color: var(--color-c5);
+  border: 2px solid transparent;
+}
+
+/* ===============> Estilizando o inpup radio <===============*/
+input[type="radio"] {
+  display: none;
+}
+
+.radio-estylad {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--color-c5);
+  position: relative;
+  cursor: pointer;
+}
+.radio-estylad::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-c5);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+input[type="radio"]:checked + .radio-estylad::before {
+  opacity: 1;
+}
+
+.radio-darck:has(input[type="radio"]:not(:checked)):hover {
+  background-color: var(--color-c9);
+}
+.radio-ligth {
+  background-color: var(--color-w);
+  color: var(--color-c12);
+  border-color: var(--Primary-p2);
+}
+.radio-darck:has(input[type="radio"]:checked) {
+  background-color: var(--color-w);
+  color: var(--color-c12);
+}
+
+/* ===============> Estilizando escolha e plano<===============*/
+.orcamento-escolha,
+.orcamento-plano {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.orcamento-plano {
+  display: none;
+}
+
+.price {
+  display: none;
+  flex: 1;
+  text-align: end;
+}
+
+.card-grid {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-w);
+  border-radius: 5px;
+  padding: 20px;
+  color: var(--color-c12);
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-info p img {
+  width: 16px;
+}
+.card-grid img {
+  height: 100%;
+  border-radius: 5px;
+}
+.visible {
+  display: grid;
+}
